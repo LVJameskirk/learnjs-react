@@ -1,4 +1,3 @@
-import { Counter } from "../counter/Counter";
 import { Menu } from "../menu/Menu";
 import { Reviews } from "../reviews/Reviews";
 
@@ -16,7 +15,6 @@ export const Restaurant = ({ restaurant }) => {
               <Reviews reviews={reviews} />
             </>
           ) : <h3>Нет отзывов</h3>}
-          <Counter />
         </div>
       );
 };

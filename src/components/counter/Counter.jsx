@@ -7,10 +7,10 @@ export const Counter = () => {
   const decrement = () => value <= 5 && value > 0 ? setValue(value - 1) : value;
 
   return (
-    <div>
+    <span>
       <button onClick={decrement}>-</button>
       <span>{value}</span>
       <button onClick={increment}>+</button>
-    </div>
+    </span>
   );
 };
