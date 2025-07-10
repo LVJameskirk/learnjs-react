@@ -1,9 +1,10 @@
+import { Counter } from "../counter/Counter";
 import { Menu } from "../menu/Menu";
 import { Reviews } from "../reviews/Reviews";
 
 export const Restaurant = ({ restaurant }) => {
     const { name, menu, reviews } = restaurant;
-    
+
     return (
         <div>
           <h2>{name}</h2>
@@ -11,6 +12,7 @@ export const Restaurant = ({ restaurant }) => {
           <Menu menu={menu} />
           <h3>Отзывы</h3>
           <Reviews reviews={reviews} />
+          <Counter />
         </div>
       );
 };
