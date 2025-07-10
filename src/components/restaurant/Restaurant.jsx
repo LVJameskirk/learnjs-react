@@ -10,8 +10,12 @@ export const Restaurant = ({ restaurant }) => {
           <h2>{name}</h2>
           <h3>Меню</h3>
           <Menu menu={menu} />
-          <h3>Отзывы</h3>
-          <Reviews reviews={reviews} />
+          {reviews?.length ? (
+            <>
+              <h3>Отзывы</h3>
+              <Reviews reviews={reviews} />
+            </>
+          ) : <h3>Нет отзывов</h3>}
           <Counter />
         </div>
       );
