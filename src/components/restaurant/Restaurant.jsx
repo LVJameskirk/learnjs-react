@@ -1,5 +1,6 @@
 import { Menu } from "../menu/Menu";
 import { Reviews } from "../reviews/Reviews";
+import { ReviewForm } from "../review-form/ReviewForm";
 
 export const Restaurant = ({ name, menu, reviews }) => {
   if (!menu) {
@@ -16,6 +17,7 @@ export const Restaurant = ({ name, menu, reviews }) => {
           <Reviews reviews={reviews} />
         </>
       ) : <h3>Нет отзывов</h3>}
+      <ReviewForm />
     </div>
   );
 };
