@@ -1,6 +1,9 @@
+import { ProgressBar } from "../progress-bar/ProgressBar";
+
 export const Layout = ({ children }) => {
   return (
     <>
+      <ProgressBar />
       <header>
         <h1>Рестораны</h1>
       </header>

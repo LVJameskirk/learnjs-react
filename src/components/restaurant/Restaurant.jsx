@@ -6,6 +6,7 @@ export const Restaurant = ({ name, menu, reviews }) => {
   if (!menu) {
     return null;
   }
+  
   return (
     <div>
       <h2>{name}</h2>
