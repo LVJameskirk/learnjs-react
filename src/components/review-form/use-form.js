@@ -13,9 +13,6 @@ const INCREMENT_RATING_ACTION = "SET_INCREMENT_RATING";
 const CLEAR_ACTION = "CLEAR_ACTION";
 
 const reducer = (state, { type, payload }) => {
-  console.log(state);
-  console.log(type);
-  console.log(payload);
   switch (type) {
     case SET_NAME_ACTION:
       return { ...state, name: payload };

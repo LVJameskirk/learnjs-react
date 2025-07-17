@@ -1,4 +1,4 @@
-import { useCallback, useEffect } from "react";
+import { useEffect } from "react";
 import { useState } from "react";
 
 const getNewPercent = () => {
@@ -14,15 +14,15 @@ const getNewPercent = () => {
 export const useProgress = () => {
   const [progress, setProgress] = useState("0%");
 
-  const handleSroll = useCallback(() => setProgress(getNewPercent()), []);
-
   useEffect(() => {
+    const handleSroll = () => {setProgress(getNewPercent())};
+
     window.addEventListener("scroll", handleSroll);
 
     return () => {
       window.removeEventListener("scroll", handleSroll);
     };
-  }, [handleSroll]);
+  }, []);
 
   return progress;
 };
