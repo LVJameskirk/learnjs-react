@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Restaurant } from "../restaurant/Restaurant";
 import { Tab } from "../tab/Tab";
 
+import styles from "./restaurantsPage.module.css";
+
 export const RestaurantsPage = ({ restaurants }) => {
   const [activeRestaurantId, setActiveRestaurantId] = useState(restaurants[0].id);
 
@@ -17,7 +19,7 @@ export const RestaurantsPage = ({ restaurants }) => {
 
   return (
     <div>
-      <nav>
+      <nav className={styles.nav}>
         {restaurants.map(({ id, name}) => (
         <Tab
           key={id}

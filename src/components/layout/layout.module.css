@@ -1,0 +1,28 @@
+.root {
+  width: 1440px;
+  margin: auto;
+  background-color: #F5F5DC;
+}
+
+.header {
+  background-color: #4B2E0F;
+}
+
+.h1 {
+  padding: 10px;
+  text-align: center;
+  color: #D4AF37;
+
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.footer {
+  background-color: #4B2E0F;
+}
+
+.footer .h2 {
+  padding: 10px;
+  text-align: center;
+  color: #D4AF37;
+}
